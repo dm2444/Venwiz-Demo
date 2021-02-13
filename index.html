@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style type="text/css">
+		*{
+			margin: 0; padding: 0; box-sizing: border-box;
+		}
+		body{
+			/* overflow-y: hidden; */
+			height: 100vh;
+		}
+		/* .header{
+			background-color: transparent;
+			position: absolute;
+			z-index: 1;
+			width: 100%;
+
+		} */
+		.header{
+			background-color: rgba(0, 0, 128, 0.9);
+			/* height: 8vh; */
+		}
+
+		.news_heading{
+			background:linear-gradient(to right, rgba(0, 0, 198, 0.5),rgba(0, 0, 198, 0.5)) ,url('img/bg1.jpg');
+			width: 100%;
+			height: 92vh;
+			background-size: cover;
+		}
+		.news_heading h1{
+			color: white;
+			padding: 200px 150px;
+		}
+		
+		/* .news_scroll {
+			height: 80vh;
+			margin: 100px 0;
+			overflow-y: auto;
+			overflow-x: hidden;
+		} */
+		.news_scroll{
+			height: 80vh;
+			overflow-y: auto;
+			overflow-x: hidden;
+			margin: 10px 220px 0 0;
+		}
+		.news_scroll ul .row .col-lg-2{
+			padding: 0;
+		}
+		.news_scroll h2{
+			color: blue;
+		}
+		.news_scroll  p{
+			font-size: 15px;
+		}
+
+		.carousel-indicators{
+			background-color: blue;
+			margin: 30px 0 0 0;
+			
+
+		}
+		@media(max-width: 992px)
+		{
+			.news_heading{
+			/* background: url('img/bg1.jpg'); */
+			width: 100%;
+			height: 40vh;
+			background-size: cover;
+		}
+		.news_heading h1{
+			color: white;
+			padding: 40px 60px;
+		}
+		.header nav{
+			width: 80%;
+			margin: 0px auto;
+		}
+		.news_scroll {
+			height: 40vh;
+			padding: 30px;
+			margin: 0;
+		}
+		.carousel-indicators{
+			margin-top:
+		}
+		}
+	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venwiz</title>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    
+<section>
+	<div class="slides">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+
+  	<!-- ********** First Slider **************** -->
+    <div class="carousel-item active slide1">
+
+
+
+      <div class="header">
+      		<nav class="navbar navbar-expand-md  navbar-dark">
+
+      			<!-- Brand -->
+			  <a class="navbar-brand" href="#"><img src="img/venwiz_logo.png" width="120"></a>
+      			  <!-- Toggler/collapsibe Button -->
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <!-- Navbar links -->
+			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Home</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Contact</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Link</a>
+			      </li>
+			    </ul>
+			  </div>
+
+			  
+
+			
+			</nav>
+      </div>
+
+      	<div class="news">
+      		<div class="row">
+      			<div class="col-lg-6 col-md-12 col-sm-12">
+      				<div class="news_heading">
+      					<h1>Let's talk manufacturing in India</h1>
+      				</div>
+      			</div>
+
+      			<div class="col-lg-6 col-md-12 col-sm-1">
+      				<div class="container-fluid">	
+      				<div class="news_scroll">
+      					<h2 class="mb-3">In the news</h2>
+      					<ul type="none">
+      						
+
+      							<li>
+      							<div class="row mb-3">
+      								<div class="col-lg-2 col-md-3 col-3">
+      							<div class="news_img">
+      								 <img src="img/bg.jpeg" class="img-fluid" width="150">
+      							</div>
+      						</div>
+      						<div class="col-lg-10 col-md-9 col-9">
+      							<div class="desc">
+      								<p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+      							</div>
+      						</div>
+      					</div>
+      						</li>
+
+
+      						<li>
+      							<div class="row mb-3">
+      								<div class="col-lg-2 col-md-3 col-3">
+      							<div class="news_img">
+      								 <img src="img/bg.jpeg" class="img-fluid" width="150">
+      							</div>
+      						</div>
+      						<div class="col-lg-10 col-md-9 col-9">
+      							<div class="desc">
+      								<p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+      							</div>
+      						</div>
+      					</div>
+      						</li>
+
+
+
+      						<li>
+      							<div class="row mb-3">
+      								<div class="col-lg-2 col-md-3 col-3">
+      							<div class="news_img">
+      								 <img src="img/bg.jpeg" class="img-fluid" width="150">
+      							</div>
+      						</div>
+      						<div class="col-lg-10 col-md-9 col-9">
+      							<div class="desc">
+      								<p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+      							</div>
+      						</div>
+      					</div>
+      						</li>
+
+
+      							<li>
+      							<div class="row mb-3">
+      								<div class="col-lg-2 col-md-3 col-3">
+      							<div class="news_img">
+      								 <img src="img/bg.jpeg" class="img-fluid" width="150">
+      							</div>
+      						</div>
+      						<div class="col-lg-10 col-md-9 col-9">
+      							<div class="desc">
+      								<p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+      							</div>
+      						</div>
+      					</div>
+      						</li>
+
+
+      							<li>
+      							<div class="row mb-3">
+      								<div class="col-lg-2 col-md-3 col-3">
+      							<div class="news_img">
+      								 <img src="img/bg.jpeg" class="img-fluid" width="150">
+      							</div>
+      						</div>
+      						<div class="col-lg-10 col-md-9 col-9">
+      							<div class="desc">
+      								<p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+      							</div>
+      						</div>
+      					</div>
+      						</li>
+
+
+      							<li>
+      							<div class="row mb-3">
+      								<div class="col-lg-2 col-md-3 col-3">
+      							<div class="news_img">
+      								 <img src="img/bg.jpeg" class="img-fluid" width="150">
+      							</div>
+      						</div>
+      						<div class="col-lg-10 col-md-9 col-9">
+      							<div class="desc">
+      								<p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+      							</div>
+      						</div>
+      					</div>
+      						</li>
+
+
+      							<li>
+      							<div class="row mb-3">
+      								<div class="col-lg-2 col-md-3 col-3">
+      							<div class="news_img">
+      								 <img src="img/bg.jpeg" class="img-fluid" width="150">
+      							</div>
+      						</div>
+      						<div class="col-lg-10 col-md-9 col-9">
+      							<div class="desc">
+      								<p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+      							</div>
+      						</div>
+      					</div>
+      						</li>
+
+
+      							<li>
+      							<div class="row mb-3">
+      								<div class="col-lg-2 col-md-3 col-3">
+      							<div class="news_img">
+      								 <img src="img/bg.jpeg" class="img-fluid" width="150">
+      							</div>
+      						</div>
+      						<div class="col-lg-10 col-md-9 col-9">
+      							<div class="desc">
+      								<p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+      							</div>
+      						</div>
+      					</div>
+      						</li>
+
+
+
+
+
+      						<li>
+      							<div class="row mb-3">
+      								<div class="col-lg-2 col-md-3 col-3">
+      							<div class="news_img">
+      								 <img src="img/bg.jpeg" class="img-fluid" width="150">
+      							</div>
+      						</div>
+      						<div class="col-lg-10 col-md-9 col-9">
+      							<div class="desc">
+      								<p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+      							</div>
+      						</div>
+      					</div>
+      						</li>
+
+
+      						<li>
+      							<div class="row mb-3">
+      								<div class="col-lg-2 col-md-3 col-3">
+      							<div class="news_img">
+      								 <img src="img/bg.jpeg" class="img-fluid" width="150">
+      							</div>
+      						</div>
+      						<div class="col-lg-10 col-md-9 col-9">
+      							<div class="desc">
+      								<p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+      							</div>
+      						</div>
+      					</div>
+      						</li>
+
+
+
+      						<li>
+      							<div class="row mb-3">
+      								<div class="col-lg-2 col-md-3 col-3">
+      							<div class="news_img">
+      								 <img src="img/bg.jpeg" class="img-fluid" width="150">
+      							</div>
+      						</div>
+      						<div class="col-lg-10 col-md-9 col-9">
+      							<div class="desc">
+      								<p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+      							</div>
+      						</div>
+      					</div>
+      						</li>
+
+      						<li>
+      							<div class="row mb-3">
+      								<div class="col-lg-2 col-md-3 col-3">
+      							<div class="news_img">
+      								 <img src="img/bg.jpeg" class="img-fluid" width="150">
+      							</div>
+      						</div>
+      						<div class="col-lg-10 col-md-9 col-9">
+      							<div class="desc">
+      								<p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+      							</div>
+      						</div>
+      					</div>
+      						</li>
+
+      						
+
+      					</ul>
+
+      				</div>
+		      			<div class="row mt-1">
+		      			<div class="col-12">
+		      				<button class="btn " style="font-size: 14px; font-weight: 700; background-color: blue; color:white;">CONTACT US</button>
+		      			</div>
+		      		</div>
+      				
+      			</div>
+      		</div>
+
+      		</div>
+
+      		<!-- ******************** Scroll End ************************ -->
+      	
+
+
+    	</div>
+
+
+
+    </div>
+
+<!-- *********************** First Slider End ****************** -->
+
+    <div class="carousel-item  slide2">
+      <div class="row">
+      	<div class="col-lg-6">
+      		<img src="img/bg1.jpg" class="img-fluid">
+      	</div>
+      	<div class="col-lg-6">
+      		<img src="img/bg1.jpg" class="img-fluid">
+      	</div>
+
+      </div>
+    </div>
+
+<!-- ********************* 2nd Slider **************** -->
+
+
+  </div>
+
+
+
+
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev "  href="#demo" data-slide="prev" >
+    <span class="carousel-control-prev-icon" ></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+	</div>
+</section>
+
+
+<script>
+	$('.carousel').carousel({
+  interval: false,
+});
+</script>
+</body>
+</html>
